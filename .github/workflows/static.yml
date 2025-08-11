@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mio - Seu Modelo Geral</title>
+<style>
+  /* Reset básico */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 400px;
+    line-height: 1.4;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  }
+
+  .btn-download {
+    background: #00c853;
+    color: white;
+    padding: 1rem 2.5rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 200, 83, 0.5);
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .btn-download:hover {
+    background: #00e676;
+    transform: scale(1.05);
+  }
+
+  /* Animação sutil de fundo */
+  @keyframes bgPulse {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  body {
+    background-size: 200% 200%;
+    animation: bgPulse 15s ease infinite;
+  }
+
+  /* Responsivo */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+      max-width: 90%;
+    }
+
+    .btn-download {
+      padding: 0.9rem 2rem;
+      font-size: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <h1>Mio - Seu Modelo Geral</h1>
+  <p>App disponível somente para dispositivos Android 10 ou superior.</p>
+  <a class="btn-download" href="https://play.google.com/store/apps/details?id=com.google.android.apps.maps" target="_blank" rel="noopener noreferrer">Download</a>
+</body>
+</html>
